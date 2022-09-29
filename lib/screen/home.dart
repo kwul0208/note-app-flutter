@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app_with_provider/screen/addNote.dart';
 class Home extends StatelessWidget {
   const Home({ Key? key }) : super(key: key);
 
@@ -15,7 +16,7 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.blueGrey,
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          
+          Navigator.push(context, MaterialPageRoute(builder: (context) => AddNote()));
         },
         child: Icon(Icons.add, size: 30, color: Colors.blueGrey,),
         backgroundColor: Colors.white,
